@@ -5,7 +5,7 @@
 <body>
 
 <?php
-require_once 'google-api-php-client/src/Google/Client.php';
+require_once 'Google/Client.php';
 require_once 'config.php';
 
 $client = new Google_Client();
