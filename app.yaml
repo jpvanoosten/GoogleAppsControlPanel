@@ -12,6 +12,12 @@ skip_files:
 - ^(.*/)?\..*$
 
 handlers:
+- url: /styles
+  static_dir: styles
+
+- url: /assets
+  static_dir: assets
+  
 - url: /.*
   script: index.php
   

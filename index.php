@@ -1,3 +1,9 @@
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="/styles/styles.css" />
+</head>
+<body>
+
 <?php
 use google\appengine\api\users\User;
 use google\appengine\api\users\UserService;
@@ -14,3 +20,10 @@ if (isset($user)) {
                UserService::createLoginUrl('/'));
 }  
  ?>
+ 
+ <p>
+ <img src="/assets/Jeremiah-480x480.jpg" alt="Jeremiah" />
+ </p>
+</body>
+
+ </html>
