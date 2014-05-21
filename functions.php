@@ -18,7 +18,7 @@ function pageHeader($title)
 	</head>
 	<table>
 		<tr>
-			<td><a href="index.php">Home</a></td>
+			<td><a href="home">Home</a></td>
 			<td><a href="user_manager">User Manager</a></td>
 		</tr>
 	</table>
