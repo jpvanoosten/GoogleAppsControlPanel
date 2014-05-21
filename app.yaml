@@ -18,6 +18,9 @@ handlers:
 - url: /assets
   static_dir: assets
   
+- url: /phpinfo.php
+  script: phpinfo.php
+  
 - url: /.*
   script: index.php
   

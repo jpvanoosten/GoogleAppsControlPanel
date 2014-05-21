@@ -8,12 +8,12 @@
 
 require_once 'include.php';
 require_once 'config.php';
-require_once 'Google/Client.php';
 
+// echo '<p>' . get_include_path() . '</p>';
+
+require_once 'Google/Client.php';
+require_once 'Google/Service/Books.php';
 $client = new Google_Client();
-$client->setClientId(CLIENT_ID);
-$client->setClientSecret(CLIENT_SECRET);
-$client->setRedirectUri(REDIRECT_URI);
 
 use google\appengine\api\users\User;
 use google\appengine\api\users\UserService;
