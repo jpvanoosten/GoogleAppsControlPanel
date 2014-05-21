@@ -5,8 +5,10 @@
 <body>
 
 <?php
-require_once 'Google/Client.php';
+
+require_once 'include.php';
 require_once 'config.php';
+require_once 'Google/Client.php';
 
 $client = new Google_Client();
 $client->setClientId(CLIENT_ID);
