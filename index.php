@@ -5,6 +5,8 @@ include_once "functions.php";
 
 $path = parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH );
 
+error_log( "The path is " . $path );
+
 switch( $path )
 {
 	case "/user_manager":

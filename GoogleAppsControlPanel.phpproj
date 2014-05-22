@@ -8,6 +8,14 @@
     <RootNamespace>GoogleAppsControlPanel</RootNamespace>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
     <AssemblyName>GoogleAppsControlPanel</AssemblyName>
+    <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+    <Server>Custom</Server>
+    <CustomServerUrl>http://localhost/gacp</CustomServerUrl>
+    <PublishEvent>None</PublishEvent>
+    <PHPDevAutoPort>True</PHPDevAutoPort>
+    <PHPDevPort>46826</PHPDevPort>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <IISProjectUrl>http://localhost:46826/</IISProjectUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <IncludeDebugInformation>true</IncludeDebugInformation>
@@ -158,11 +166,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.yaml" />
-    <Content Include="assets\client.json" />
     <Content Include="assets\GoogleAppsControlPanel-logo.psd" />
     <Content Include="assets\GoogleAppsControlPanel-OAuth-logo.png" />
     <Content Include="assets\Jeremiah-480x480.jpg" />
-    <Content Include="config.php.template" />
+    <Content Include="config_template.php" />
     <Content Include="google-api-php-client\.travis.yml" />
     <Content Include="google-api-php-client\composer.json" />
     <Content Include="google-api-php-client\CONTRIBUTING.md" />
@@ -181,7 +188,6 @@
     <Content Include="google-api-php-client\tests\phpunit.xml" />
     <Content Include="google-api-php-client\tests\README" />
     <Content Include="php.ini" />
-    <Content Include="README.md" />
     <Content Include="styles\styles.css" />
   </ItemGroup>
   <ItemGroup>
