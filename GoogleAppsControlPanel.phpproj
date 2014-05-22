@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>GoogleAppsControlPanel</Name>
+    <ProjectGuid>1dd34514-c0b9-461f-8187-e21b2c620f4a</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GoogleAppsControlPanel</RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>GoogleAppsControlPanel</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="config.php" />
+    <Compile Include="controllers\controller_users.php" />
+    <Compile Include="functions.php" />
+    <Compile Include="globals.php" />
+    <Compile Include="google-api-php-client\examples\batch.php" />
+    <Compile Include="google-api-php-client\examples\fileupload.php" />
+    <Compile Include="google-api-php-client\examples\idtoken.php" />
+    <Compile Include="google-api-php-client\examples\index.php" />
+    <Compile Include="google-api-php-client\examples\multi-api.php" />
+    <Compile Include="google-api-php-client\examples\service-account.php" />
+    <Compile Include="google-api-php-client\examples\simple-query.php" />
+    <Compile Include="google-api-php-client\examples\simplefileupload.php" />
+    <Compile Include="google-api-php-client\examples\templates\base.php" />
+    <Compile Include="google-api-php-client\examples\user-example.php" />
+    <Compile Include="google-api-php-client\src\Google\Auth\Abstract.php" />
+    <Compile Include="google-api-php-client\src\Google\Auth\AssertionCredentials.php" />
+    <Compile Include="google-api-php-client\src\Google\Auth\Exception.php" />
+    <Compile Include="google-api-php-client\src\Google\Auth\LoginTicket.php" />
+    <Compile Include="google-api-php-client\src\Google\Auth\OAuth2.php" />
+    <Compile Include="google-api-php-client\src\Google\Auth\Simple.php" />
+    <Compile Include="google-api-php-client\src\Google\Cache\Abstract.php" />
+    <Compile Include="google-api-php-client\src\Google\Cache\Apc.php" />
+    <Compile Include="google-api-php-client\src\Google\Cache\Exception.php" />
+    <Compile Include="google-api-php-client\src\Google\Cache\File.php" />
+    <Compile Include="google-api-php-client\src\Google\Cache\Memcache.php" />
+    <Compile Include="google-api-php-client\src\Google\Cache\Null.php" />
+    <Compile Include="google-api-php-client\src\Google\Client.php" />
+    <Compile Include="google-api-php-client\src\Google\Collection.php" />
+    <Compile Include="google-api-php-client\src\Google\Config.php" />
+    <Compile Include="google-api-php-client\src\Google\Exception.php" />
+    <Compile Include="google-api-php-client\src\Google\Http\Batch.php" />
+    <Compile Include="google-api-php-client\src\Google\Http\CacheParser.php" />
+    <Compile Include="google-api-php-client\src\Google\Http\MediaFileUpload.php" />
+    <Compile Include="google-api-php-client\src\Google\Http\Request.php" />
+    <Compile Include="google-api-php-client\src\Google\Http\REST.php" />
+    <Compile Include="google-api-php-client\src\Google\IO\Abstract.php" />
+    <Compile Include="google-api-php-client\src\Google\IO\Curl.php" />
+    <Compile Include="google-api-php-client\src\Google\IO\Exception.php" />
+    <Compile Include="google-api-php-client\src\Google\IO\Stream.php" />
+    <Compile Include="google-api-php-client\src\Google\Model.php" />
+    <Compile Include="google-api-php-client\src\Google\Service.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\AdExchangeBuyer.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\AdExchangeSeller.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Admin.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\AdSense.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\AdSenseHost.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Analytics.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\AndroidPublisher.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\AppState.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Audit.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Bigquery.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Blogger.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Books.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Calendar.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\CivicInfo.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Compute.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Coordinate.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Customsearch.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Datastore.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Dfareporting.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Directory.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Dns.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\DoubleClickBidManager.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Doubleclicksearch.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Drive.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Exception.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Freebase.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Fusiontables.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Games.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\GamesManagement.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Genomics.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\GroupsMigration.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Groupssettings.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\IdentityToolkit.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Licensing.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Manager.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\MapsEngine.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Mirror.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Oauth2.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Orkut.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Pagespeedonline.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Plus.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\PlusDomains.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Prediction.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\QPXExpress.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Replicapool.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Reports.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Reseller.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Resource.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Resourceviews.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\SiteVerification.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Spectrum.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\SQLAdmin.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Storage.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Taskqueue.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Tasks.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Translate.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Urlshortener.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\Webfonts.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\YouTube.php" />
+    <Compile Include="google-api-php-client\src\Google\Service\YouTubeAnalytics.php" />
+    <Compile Include="google-api-php-client\src\Google\Signer\Abstract.php" />
+    <Compile Include="google-api-php-client\src\Google\Signer\P12.php" />
+    <Compile Include="google-api-php-client\src\Google\Utils.php" />
+    <Compile Include="google-api-php-client\src\Google\Utils\URITemplate.php" />
+    <Compile Include="google-api-php-client\src\Google\Verifier\Abstract.php" />
+    <Compile Include="google-api-php-client\src\Google\Verifier\Pem.php" />
+    <Compile Include="google-api-php-client\tests\adsense\AdSenseTest.php" />
+    <Compile Include="google-api-php-client\tests\AllTests.php" />
+    <Compile Include="google-api-php-client\tests\BaseTest.php" />
+    <Compile Include="google-api-php-client\tests\bootstrap.php" />
+    <Compile Include="google-api-php-client\tests\general\ApiBatchRequestTest.php" />
+    <Compile Include="google-api-php-client\tests\general\ApiCacheParserTest.php" />
+    <Compile Include="google-api-php-client\tests\general\ApiClientTest.php" />
+    <Compile Include="google-api-php-client\tests\general\ApiMediaFileUploadTest.php" />
+    <Compile Include="google-api-php-client\tests\general\ApiModelTest.php" />
+    <Compile Include="google-api-php-client\tests\general\ApiOAuth2Test.php" />
+    <Compile Include="google-api-php-client\tests\general\AuthTest.php" />
+    <Compile Include="google-api-php-client\tests\general\CacheTest.php" />
+    <Compile Include="google-api-php-client\tests\general\GeneralTests.php" />
+    <Compile Include="google-api-php-client\tests\general\IoTest.php" />
+    <Compile Include="google-api-php-client\tests\general\RequestTest.php" />
+    <Compile Include="google-api-php-client\tests\general\RestTest.php" />
+    <Compile Include="google-api-php-client\tests\general\ServiceTest.php" />
+    <Compile Include="google-api-php-client\tests\general\URITemplateTest.php" />
+    <Compile Include="google-api-php-client\tests\OAuthHelper.php" />
+    <Compile Include="google-api-php-client\tests\pagespeed\AllPageSpeedTests.php" />
+    <Compile Include="google-api-php-client\tests\pagespeed\PageSpeedTest.php" />
+    <Compile Include="google-api-php-client\tests\plus\PlusTest.php" />
+    <Compile Include="google-api-php-client\tests\tasks\AllTasksTests.php" />
+    <Compile Include="google-api-php-client\tests\tasks\TasksTest.php" />
+    <Compile Include="google-api-php-client\tests\urlshortener\AllUrlShortenerTests.php" />
+    <Compile Include="google-api-php-client\tests\urlshortener\UrlShortenerTests.php" />
+    <Compile Include="google-api-php-client\tests\youtube\YouTubeTest.php" />
+    <Compile Include="include.php" />
+    <Compile Include="index.php" />
+    <Compile Include="phpinfo.php" />
+    <Compile Include="views\view_frontpage.php" />
+    <Compile Include="views\view_users.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.yaml" />
+    <Content Include="assets\client.json" />
+    <Content Include="assets\GoogleAppsControlPanel-logo.psd" />
+    <Content Include="assets\GoogleAppsControlPanel-OAuth-logo.png" />
+    <Content Include="assets\Jeremiah-480x480.jpg" />
+    <Content Include="config.php.template" />
+    <Content Include="google-api-php-client\.travis.yml" />
+    <Content Include="google-api-php-client\composer.json" />
+    <Content Include="google-api-php-client\CONTRIBUTING.md" />
+    <Content Include="google-api-php-client\examples\key.p12" />
+    <Content Include="google-api-php-client\examples\styles\style.css" />
+    <Content Include="google-api-php-client\LICENSE" />
+    <Content Include="google-api-php-client\README.md" />
+    <Content Include="google-api-php-client\src\Google\IO\cacerts.pem" />
+    <Content Include="google-api-php-client\style\ruleset.xml" />
+    <Content Include="google-api-php-client\tests\general\testdata\cacert.json" />
+    <Content Include="google-api-php-client\tests\general\testdata\cacert.pem" />
+    <Content Include="google-api-php-client\tests\general\testdata\cert.p12" />
+    <Content Include="google-api-php-client\tests\general\testdata\privkey.pem" />
+    <Content Include="google-api-php-client\tests\general\testdata\test.ini" />
+    <Content Include="google-api-php-client\tests\general\testdata\test_public_key.pem" />
+    <Content Include="google-api-php-client\tests\phpunit.xml" />
+    <Content Include="google-api-php-client\tests\README" />
+    <Content Include="php.ini" />
+    <Content Include="README.md" />
+    <Content Include="styles\styles.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\" />
+    <Folder Include="controllers\" />
+    <Folder Include="google-api-php-client\" />
+    <Folder Include="google-api-php-client\examples\" />
+    <Folder Include="google-api-php-client\examples\styles\" />
+    <Folder Include="google-api-php-client\examples\templates\" />
+    <Folder Include="google-api-php-client\src\" />
+    <Folder Include="google-api-php-client\src\Google\" />
+    <Folder Include="google-api-php-client\src\Google\Auth\" />
+    <Folder Include="google-api-php-client\src\Google\Cache\" />
+    <Folder Include="google-api-php-client\src\Google\Http\" />
+    <Folder Include="google-api-php-client\src\Google\IO\" />
+    <Folder Include="google-api-php-client\src\Google\Service\" />
+    <Folder Include="google-api-php-client\src\Google\Signer\" />
+    <Folder Include="google-api-php-client\src\Google\Utils\" />
+    <Folder Include="google-api-php-client\src\Google\Verifier\" />
+    <Folder Include="google-api-php-client\style\" />
+    <Folder Include="google-api-php-client\tests\" />
+    <Folder Include="google-api-php-client\tests\adsense\" />
+    <Folder Include="google-api-php-client\tests\general\" />
+    <Folder Include="google-api-php-client\tests\general\testdata\" />
+    <Folder Include="google-api-php-client\tests\pagespeed\" />
+    <Folder Include="google-api-php-client\tests\plus\" />
+    <Folder Include="google-api-php-client\tests\tasks\" />
+    <Folder Include="google-api-php-client\tests\urlshortener\" />
+    <Folder Include="google-api-php-client\tests\youtube\" />
+    <Folder Include="styles\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+</Project>
