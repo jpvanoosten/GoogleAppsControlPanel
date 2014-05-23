@@ -1,6 +1,4 @@
 RewriteEngine on
-RewriteRule ^home$ index.php [L]
-RewriteRule ^user_manager$ index.php [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

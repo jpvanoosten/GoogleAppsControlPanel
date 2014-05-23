@@ -443,6 +443,7 @@
     <Content Include="styles\styles.css" />
     <Content Include="templates\about.html" />
     <Content Include="templates\base.html" />
+    <Content Include="templates\contact.html" />
     <Content Include="templates\home.html" />
     <Content Include="vendor\composer\installed.json" />
     <Content Include="vendor\twig\twig\.editorconfig" />
