@@ -12,8 +12,14 @@ skip_files:
 - ^(.*/)?\..*$
 
 handlers:
-- url: /styles
-  static_dir: styles
+- url: /css
+  static_dir: css
+
+- url: /fonts
+  static_dir: fonts
+
+- url: /js
+  static_dir: js
 
 - url: /assets
   static_dir: assets

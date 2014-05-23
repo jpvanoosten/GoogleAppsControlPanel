@@ -3,16 +3,24 @@
 function viewFrontpage()
 {
 	$ret = <<<FRONTPAGE
-<p>This is the front page.</p>
-<ul>
-	<li><a href='user_manager'>User Manager</a></li>
-</ul>
+    
+    <!-- Begin page content -->
+    <div class="container">
+      <div class="page-header">
+        <h1>Home</h1>
+      </div>
+      <p class="lead">Welcome to Google Apps Control Panel</p>
+      <p>This is the Goole Apps Control Panel. Use this page to administer your users.</p>
+    </div>
+    
 FRONTPAGE;
 
 	return $ret;
 }
 
-echo pageHeader( PROJECT_NAME . " - Frontpage");
+echo pageHeader( PROJECT_NAME . " - Home");
+
+echo navBar("home");
 
 echo viewFrontpage();
 
