@@ -161,7 +161,6 @@
     <Compile Include="include.php" />
     <Compile Include="index.php" />
     <Compile Include="phpinfo.php" />
-    <Compile Include="twig.php" />
     <Compile Include="vendor\autoload.php" />
     <Compile Include="vendor\composer\autoload_classmap.php" />
     <Compile Include="vendor\composer\autoload_namespaces.php" />
