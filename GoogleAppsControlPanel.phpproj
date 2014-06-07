@@ -439,7 +439,6 @@
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="php.ini" />
-    <Content Include="styles\styles.css" />
     <Content Include="templates\about.html" />
     <Content Include="templates\base.html" />
     <Content Include="templates\contact.html" />

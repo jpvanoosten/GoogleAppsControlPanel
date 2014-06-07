@@ -6,8 +6,6 @@ require_once "config.php";
 $path = parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH );
 $base = basename($path);
 
-var_dump($base);
-
 $loader = new Twig_Loader_Filesystem("templates");
 $twig = new Twig_Environment($loader);
 
