@@ -13,27 +13,18 @@ skip_files:
 
 handlers:
 - url: /css
-  static_dir: css
+  static_dir: public/css
 
 - url: /fonts
-  static_dir: fonts
+  static_dir: public/fonts
 
+- url: /img
+  static_dir: public/img
+  
 - url: /js
-  static_dir: js
+  static_dir: public/js
 
-- url: /assets
-  static_dir: assets
-  
-- url: /phpinfo.php
-  script: phpinfo.php
-  
-- url: /.*
-  script: index.php
-  
-- url: /profile/.*
-  script: user_profile.php
-  login: required
-  
-- url: /admin/.*
-  script: admin.php
+- url: /*
+  script: /public/index.php
   login: admin
+  
