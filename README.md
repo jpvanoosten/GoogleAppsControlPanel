@@ -1,4 +1,4 @@
-ZendSkeletonApplication
+Google Apps Control Panel
 =======================
 
 Introduction
