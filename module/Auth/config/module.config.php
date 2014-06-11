@@ -25,6 +25,16 @@ return array(
             ),
         ),
     ),
+    'translator' => array(
+        'locale' => 'en_US',
+        'translation_file_patterns' => array(
+            array(
+                'type'     => 'gettext',
+                'base_dir' => __DIR__ . '/../language',
+                'pattern'  => '%s.mo',
+            ),
+        ),
+    ),
     'controllers' => array(
         'invokables' => array(
             'Auth\Controller\Auth' => 'Auth\Controller\AuthController',
@@ -32,17 +42,36 @@ return array(
     ),
     'router' => array(
         'routes' => array( 
-            'auth' => array(
-                'type'      => 'Segment',
-                'options'   => array(
-                    'route'     => '/auth[/][:action]',
-                    'defaults'  => array(
+            'login' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route'    => '/login',
+                    'defaults' => array(
                         '__NAMESPACE__' => 'Auth\Controller',
                         'controller'    => 'Auth',
-                        'action'        => 'index',
+                        'action'        => 'login',
                     ),
-                    'constraints' => array(
-                        'action'    => '^index|login|logout|register$'                        
+                ),
+            ),
+            'logout' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route'    => '/logout',
+                    'defaults' => array(
+                        '__NAMESPACE__' => 'Auth\Controller',
+                        'controller'    => 'Auth',
+                        'action'        => 'logout',
+                    ),
+                ),
+            ),
+            'register' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route'    => '/register',
+                    'defaults' => array(
+                        '__NAMESPACE__' => 'Auth\Controller',
+                        'controller'    => 'Auth',
+                        'action'        => 'register',
                     ),
                 ),
             ),
