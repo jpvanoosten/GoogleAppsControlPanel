@@ -5,18 +5,27 @@
  *
  * @see https://github.com/zendframework/ZFTool
  */
+
+$env = getenv('APPLICATION_ENV') ?: 'production';
+
 return array(
     'modules' => array(
         'Application',
-        'Auth'
+        'Auth',
     ),
     'module_listener_options' => array(
         'module_paths' => array(
             './module',
-            './vendor'
+            './vendor',
         ),
         'config_glob_paths' => array(
             'config/autoload/{,*.}{global,local}.php'
-        )
-    )
+        ),
+        
+        'config_cache_enabled' => ($env == 'production'),
+        'module_map_cache_enabled' => ($env == 'production'),
+        'module_map_cache_key' => 'module_map',
+        'cache_dir' => 'data/config/',
+        'check_dependencies' => ($env != 'production'),
+    ),
 );
