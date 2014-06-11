@@ -12,4 +12,10 @@
  */
 
 return array(
+    'google' => array(
+        'client_id'     => 'CLIENT_ID',
+        'email_address' => 'EMAIL_ADDRESS',
+        'client_secret' => 'CLIENT_SECRET',
+        'redirect_uri'  => 'REDIRECT_URI',
+    )
 );
