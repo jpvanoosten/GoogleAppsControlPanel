@@ -1,0 +1,24 @@
+{
+  "name": "GoogleAppsControlPanel",
+  "version": "0.0.1",
+  "description": "Google Apps Administrative Control Panel",
+  "main": "public/index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jpvanoosten/GoogleAppsControlPanel.git"
+  },
+  "author": "Jeremiah van Oosten",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/jpvanoosten/GoogleAppsControlPanel/issues"
+  },
+  "homepage": "https://github.com/jpvanoosten/GoogleAppsControlPanel",
+  "devDependencies": {
+	"grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.3.3",
+    "grunt-contrib-uglify": "~0.4.0"  }
+}
