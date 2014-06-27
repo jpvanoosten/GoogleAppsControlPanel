@@ -723,6 +723,7 @@
     <Content Include="config\autoload\local.php.dist" />
     <Content Include="config\autoload\README.md" />
     <Content Include="data\cache\.gitignore" />
+    <Content Include="Gruntfile.js" />
     <Content Include="module\Application\language\ar_JO.mo" />
     <Content Include="module\Application\language\ar_JO.po" />
     <Content Include="module\Application\language\ar_SY.mo" />
@@ -771,6 +772,7 @@
     <Content Include="module\Auth\view\auth\auth\login.phtml" />
     <Content Include="module\Auth\view\auth\auth\logout.phtml" />
     <Content Include="module\Auth\view\auth\auth\register.phtml" />
+    <Content Include="package.json" />
     <Content Include="php.ini" />
     <Content Include="public\.htaccess" />
     <Content Include="public\css\bootstrap-theme.css" />

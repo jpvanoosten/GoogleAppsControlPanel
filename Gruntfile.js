@@ -1,23 +1,30 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
-  // Project configuration.
-  grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
-    uglify: {
-      options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-      },
-      build: {
-        src: 'src/<%= pkg.name %>.js',
-        dest: 'build/<%= pkg.name %>.min.js'
-      }
-    }
-  });
+    // Project configuration.
+    grunt.initConfig({
+        watch: {
+            options: {
+                livereload: true,
+            },
+            php: {
+                files: ['module/**/*.php', 'module/*/view/**/*.phtml'],
+            },
+            css: {
+                files: ['public/css/*.css'],
+            },
+            images: {
+                files: ['public/img/*.png'],
+            },
+            scripts: {
+                files: ['public/js/*.js'],
+            },
+        },
+    });
 
-  // Load the plugin that provides the "uglify" task.
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+    // Load the 
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
-  // Default task(s).
-  grunt.registerTask('default', ['uglify']);
+    // Register task(s).
+    grunt.registerTask('default', ['watch']);
 
 };
